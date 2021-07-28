@@ -39,7 +39,7 @@ class AppAsset extends AssetBundle
         'css/theme-blog.css',
         'css/theme-shop.css',
         'css/skins/default.css',
-
+        'css/custom.css',
     ];
     public $js = [
         "vendor/modernizr/modernizr.min.js", //borr

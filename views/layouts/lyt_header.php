@@ -2,6 +2,7 @@
 use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use webvimark\modules\UserManagement\UserManagementModule;
+use yii\helpers\Html;
 ?>
 			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 164, 'stickySetTop': '-164px', 'stickyChangeLogo': false}">
 				<div class="header-body border-0">
@@ -13,7 +14,7 @@ use webvimark\modules\UserManagement\UserManagementModule;
 										<nav class="header-nav-top">
 											<ul class="nav nav-pills text-uppercase text-2">
 												<li class="nav-item nav-item-anim-icon">
-													<a class="nav-link ps-0 text-light opacity-7" href="about-us.html"><i class="fas fa-angle-right"></i> Acerca de sie</a>
+													<?= Html::a('<i class="fas fa-angle-right"></i> Acerca de SIE', ['/site/about'], ['class' => 'nav-link ps-0 text-light opacity-7']) ?>
 												</li>
 												<li class="nav-item nav-item-anim-icon">
 													<a class="nav-link text-light opacity-7 pe-0" href="contact-us.html"><i class="fas fa-angle-right"></i> Contactanos</a>
@@ -108,7 +109,7 @@ use webvimark\modules\UserManagement\UserManagementModule;
 																	Identidad
 																</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="page-custom-header.html">Acerca de sie</a></li>
+																	<li><?= Html::a('Acerca de SIE', ['/site/about'], ['class' => 'dropdown-item']) ?></li>
 																	<li><a class="dropdown-item" href="page-careers.html">Equipo sie</a></li>
 																</ul>
 															</li>

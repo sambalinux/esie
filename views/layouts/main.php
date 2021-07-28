@@ -28,18 +28,22 @@ AppAsset::register($this);
 
 <div class="body">
     <?php require_once('lyt_header.php'); ?>
-    
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+                            <?= Breadcrumbs::widget([
+                                    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+                            ]) ?>
+        </div>
+    </div>
     <div role="main" class="main">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
+        
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
 
 
     <?php require_once('lyt_footer.php'); ?>
-
+    <a class="scroll-to-top hidden-mobile visible" href="#"><i class="fas fa-chevron-up"></i></a>
 <?php $this->endBody() ?>
         </div> <!--body-->
 </body>

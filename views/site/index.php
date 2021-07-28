@@ -2,7 +2,7 @@
 						<div class="row align-items-center text-center my-5">
 							<div class="col-md-6">
 								<h2 class="font-weight-bold text-9 mb-0 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-appear-animation-duration="750" style="animation-delay: 200ms;">Sistema de Integración Escolar</h2>
-								<p class="font-weight-semibold text-primary text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750" style="animation-delay: 600ms;">ADMINISTRACIÓN ESCOLAR POR EXCELENCIA</p>
+								<p class="font-weight-semibold text-primary text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750" style="animation-delay: 600ms;">ADMINISTRACIÓN ESCOLAR CON 30 AÑOS DE EXPERIENCIA</p>
 								<p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750" style="animation-delay: 800ms;">Administra y brinda la información escolar efectiva y eficazmente. </p>
 								<a href="#" class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">CARACTERISTICAS</a>
 								<p class="appear-animation text-3 animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200" style="animation-delay: 1200ms;">* Solicita una  <strong class="text-dark">demostración</strong> Muchas instituciones lo garantizan.</p>
@@ -199,28 +199,28 @@
 							<div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
 								<div class="counter">
 									<i class="icons icon-user text-color-light"></i>
-									<strong class="text-color-light font-weight-extra-bold" data-to="65" data-append="+">0</strong>
+									<strong class="text-color-light font-weight-extra-bold" data-to="43" data-append="+">0</strong>
 									<label class="text-4 mt-1 text-color-light">Instituciones Satisfechas</label>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3 mb-5 mb-lg-0">
 								<div class="counter">
 									<i class="icons icon-badge text-color-light"></i>
-									<strong class="text-color-light font-weight-extra-bold" data-to="35">0</strong>
+									<strong class="text-color-light font-weight-extra-bold" data-to="30">0</strong>
 									<label class="text-4 mt-1 text-color-light">Años de experiencia</label>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3 mb-5 mb-sm-0">
 								<div class="counter">
 									<i class="icons icon-graph text-color-light"></i>
-									<strong class="text-color-light font-weight-extra-bold" data-to="178">0</strong>
+									<strong class="text-color-light font-weight-extra-bold" data-to="256">0</strong>
 									<label class="text-4 mt-1 text-color-light">Estadisticas</label>
 								</div>
 							</div>
 							<div class="col-sm-6 col-lg-3">
 								<div class="counter">
 									<i class="icons icon-cup text-color-light"></i>
-									<strong class="text-color-light font-weight-extra-bold" data-to="345">0</strong>
+									<strong class="text-color-light font-weight-extra-bold" data-to="46">0</strong>
 									<label class="text-4 mt-1 text-color-light">Tazas de Cafe</label>
 								</div>
 							</div>
