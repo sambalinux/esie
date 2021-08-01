@@ -17,7 +17,8 @@ use yii\helpers\Html;
 													<?= Html::a('<i class="fas fa-angle-right"></i> Acerca de SIE', ['/site/about'], ['class' => 'nav-link ps-0 text-light opacity-7']) ?>
 												</li>
 												<li class="nav-item nav-item-anim-icon">
-													<a class="nav-link text-light opacity-7 pe-0" href="contact-us.html"><i class="fas fa-angle-right"></i> Contactanos</a>
+													
+													<?= Html::a('<i class="fas fa-angle-right"></i> Contactanos', ['/site/contact'], ['class' => 'nav-link text-light opacity-7 pe-0']) ?>
 												</li>
 												<li class="nav-item nav-item-anim-icon">
 													<a class="nav-link text-light opacity-7 pe-0" href="contact-us.html"><i class="fas fa-angle-right"></i> Ingresar</a>
@@ -110,7 +111,7 @@ use yii\helpers\Html;
 																</a>
 																<ul class="dropdown-menu">
 																	<li><?= Html::a('Acerca de SIE', ['/site/about'], ['class' => 'dropdown-item']) ?></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Equipo sie</a></li>
+																	<li><?= Html::a('Equipo SIE', ['/site/team'], ['class' => 'dropdown-item']) ?></li>
 																</ul>
 															</li>
 															<li class="dropdown">
