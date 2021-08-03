@@ -3,6 +3,7 @@ use yii\bootstrap4\Nav;
 use yii\bootstrap4\NavBar;
 use webvimark\modules\UserManagement\UserManagementModule;
 use yii\helpers\Html;
+use webvimark\modules\UserManagement\models\User;
 ?>
 			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 164, 'stickySetTop': '-164px', 'stickyChangeLogo': false}">
 				<div class="header-body border-0">
@@ -21,7 +22,8 @@ use yii\helpers\Html;
 													<?= Html::a('<i class="fas fa-angle-right"></i> Contactanos', ['/site/contact'], ['class' => 'nav-link text-light opacity-7 pe-0']) ?>
 												</li>
 												<li class="nav-item nav-item-anim-icon">
-													<a class="nav-link text-light opacity-7 pe-0" href="contact-us.html"><i class="fas fa-angle-right"></i> Ingresar</a>
+
+													<?= Html::a('<i class="fas fa-angle-right"></i> Ingresar', ['/user-management/auth/login'], ['class' => 'nav-link text-light opacity-7 pe-0']) ?>
 												</li>
 											</ul>
 										</nav>
@@ -98,9 +100,8 @@ use yii\helpers\Html;
 													<nav class="collapse">
 														<ul class="nav nav-pills flex-column flex-lg-row" id="mainNav">
 															<li class="dropdown">
-																<a class="dropdown-item dropdown-toggle" href="index.html">
-																	INICIO
-																</a>
+																
+																<?= Html::a('INICIO', ['/site/index'], ['class' => 'dropdown-item dropdown-toggle']) ?>
 																
 															</li>
 
@@ -119,8 +120,8 @@ use yii\helpers\Html;
 																	Clientes
 																</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="page-custom-header.html">Clientes sie</a></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Casos de estudio</a></li>
+																	<li><a class="dropdown-item" href="#">Clientes sie</a></li>
+																	<li><a class="dropdown-item" href="#">Casos de estudio</a></li>
 																</ul>
 															</li>
 															<li class="dropdown">
@@ -128,9 +129,9 @@ use yii\helpers\Html;
 																	Servicios
 																</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="page-custom-header.html">Capacitación</a></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Consultoria</a></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Respaldos</a></li>
+																	<li><a class="dropdown-item" href="#">Capacitación</a></li>
+																	<li><a class="dropdown-item" href="#">Consultoria</a></li>
+																	<li><a class="dropdown-item" href="#">Respaldos</a></li>
 																</ul>
 															</li>
 															<li class="dropdown">
@@ -138,30 +139,35 @@ use yii\helpers\Html;
 																	Soporte
 																</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="page-custom-header.html">Preguntas frecuentes</a></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Manuales</a></li>
-																	<li><a class="dropdown-item" href="page-careers.html">Actualizaciones</a></li>
+																	<li><a class="dropdown-item" href="#">Preguntas frecuentes</a></li>
+																	<li><a class="dropdown-item" href="#">Manuales</a></li>
+																	<li><a class="dropdown-item" href="#">Actualizaciones</a></li>
 																</ul>
 															</li>
 
 															<li class="dropdown">
-																<a class="dropdown-item dropdown-toggle" href="#">
-																	INGRESAR
-																</a>
-																<ul class="dropdown-menu">
-																	<li>
-																		<a class="dropdown-item" href="index.html">
-																			Iniciar sesión
-																		</a>
-																	</li>
-																	<li>
-																		<a class="dropdown-item" href="index.html">
-																			Registrarse
-																		</a>
-																	</li>
+																
+																<?php if (Yii::$app->user->isGuest) { ?>
+																
+																		<?= Html::a('Iniciar Sesión', ['/user-management/auth/login'], ['class' => 'dropdown-item']) ?>
+																
+																<?php }else{ ?>
+																
+																		<?= Html::a('Cerrar sesión (' . Yii::$app->user->identity->username . ')', ['/user-management/auth/logout'], ['class' => 'dropdown-item dropdown-toggle']) ?>
+																		<?php if(User::hasRole('superadmin')): ?>
+																		<ul class="dropdown-menu">
+																			<li>
+																			<?= Html::a('Usuarios', ['/user-management/user/index'], ['class' => 'dropdown-item']) ?>
+																			</li>
+																			<li><?= Html::a('Roles', ['/user-management/role/index'], ['class' => 'dropdown-item']) ?></li>
+																			<li><?= Html::a('Permisos', ['/user-management/permission/index'], ['class' => 'dropdown-item']) ?></li>
+																		</ul>
+																		<?php endif;?>
 																	
-																</ul>
+																<?php }?>
+																
 															</li>
+																											
 														</ul>
 													</nav>
 												</div>

@@ -43,7 +43,6 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         "vendor/modernizr/modernizr.min.js", //borr
-
         'vendor/jquery/jquery.min.js',
 //borrar
         "vendor/jquery.appear/jquery.appear.min.js",

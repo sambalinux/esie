@@ -48,12 +48,37 @@
 					</div>
 				</section>	
 					
+<!--Video -->
+<!--<div class="container pt-2 pb-4">
+            <div class="row pb-4 mb-2">
+                <div class="col-md-8 mb-4 mb-md-0 appear-animation" data-appear-animation="bounceInRight" data-appear-animation-delay="300">
+
+				<div class="ratio ratio-16x9">
+						
+						<iframe src="https://player.vimeo.com/video/89983587" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" ></iframe>
+				</div>	
+
+                    <hr class="solid my-5 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
+                </div>
+                <div class="col-md-4">
+                    <div class="overflow-hidden">
+                        <h2 class="text-color-dark font-weight-normal text-4 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="600">Sie <strong class="font-weight-extra-bold">Caracteristicas<nav></nav></strong></h2>
+                    </div>
+                    <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"> Seguridad, Integración </p>
+                    <p class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800"> Adaptabilidad, Escalabilidad</p>
+
+
+                </div>
+            </div>
+
+</div>
+						-->				
+
 
 
 <!--caracteristicas -->
 <div class="container mb-5 pb-4">
-
-					
+				
 <div class="row pb-3">
 						<div class="col-lg-8">
 							<h2 class="font-weight-normal text-7">Características <strong class="font-weight-extra-bold">del SIE</strong></h2>
@@ -192,6 +217,9 @@
 
 </div>
 <!-- caracteristicas -->
+
+
+
 
 					<section class="section section-primary border-0 mb-0 appear-animation" data-appear-animation="fadeIn" data-plugin-options="{'accY': -150}">
 					<div class="container">

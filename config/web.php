@@ -39,6 +39,14 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        //agregado para bootstrap 4 zea
+        'assetManager' =>[
+            'bundles'=>[
+                yii\bootstrap\BootstrapAsset::class =>false
+            ]
+        ],
+
+
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
             // send all mails to a file by default. You have to set
@@ -56,14 +64,14 @@ $config = [
             ],
         ],
         'db' => $db,
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
             ],
         ],
-        */
+        
     ],
     'params' => $params,
     //agregado para webvimark zea
