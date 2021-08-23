@@ -42,7 +42,11 @@ $config = [
         //agregado para bootstrap 4 zea
         'assetManager' =>[
             'bundles'=>[
-                yii\bootstrap\BootstrapAsset::class =>false
+                yii\bootstrap\BootstrapAsset::class =>false,
+                'kartik\form\ActiveFormAsset' => [
+                    'bsDependencyEnabled' => true // do not load bootstrap assets for a specific asset bundle
+
+                ],
             ]
         ],
 
@@ -102,6 +106,15 @@ $config = [
                     };
                 },
         ],
+        //agregado para usar gridview de kartik
+        'gridview' =>[
+            'class'=>'\kartik\grid\Module',
+            // enter optional module parameters below - only if you need to  
+            // use your own export download action or custom translation 
+            // message source
+            'downloadAction' => 'gridview/export/download',
+            // 'i18n' => []
+        ],
     ],
 ];
 
@@ -118,7 +131,7 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
         // uncomment the following to add your IP if you are not connecting from localhost.
-        //'allowedIPs' => ['127.0.0.1', '::1'],
+        'allowedIPs' => ['127.0.0.1', '::1'],
     ];
 }
 

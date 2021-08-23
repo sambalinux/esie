@@ -113,6 +113,8 @@ use webvimark\modules\UserManagement\models\User;
 																<ul class="dropdown-menu">
 																	<li><?= Html::a('Acerca de SIE', ['/site/about'], ['class' => 'dropdown-item']) ?></li>
 																	<li><?= Html::a('Equipo SIE', ['/site/team'], ['class' => 'dropdown-item']) ?></li>
+																	<li><?= Html::a('Caracteristicas del SIE', ['/site/features'], ['class' => 'dropdown-item']) ?></li>
+																	<li><?= Html::a('Contactanos', ['/site/contact'], ['class' => 'dropdown-item']) ?></li>
 																</ul>
 															</li>
 															<li class="dropdown">
@@ -120,7 +122,7 @@ use webvimark\modules\UserManagement\models\User;
 																	Clientes
 																</a>
 																<ul class="dropdown-menu">
-																	<li><a class="dropdown-item" href="#">Clientes sie</a></li>
+																	<li><?= Html::a('Clientes SIE', ['/cliente/list'], ['class' => 'dropdown-item']) ?></li></li>
 																	<li><a class="dropdown-item" href="#">Casos de estudio</a></li>
 																</ul>
 															</li>
@@ -161,6 +163,7 @@ use webvimark\modules\UserManagement\models\User;
 																			</li>
 																			<li><?= Html::a('Roles', ['/user-management/role/index'], ['class' => 'dropdown-item']) ?></li>
 																			<li><?= Html::a('Permisos', ['/user-management/permission/index'], ['class' => 'dropdown-item']) ?></li>
+																			<li><?= Html::a('Clientes', ['/cliente/index'], ['class' => 'dropdown-item']) ?></li>
 																		</ul>
 																		<?php endif;?>
 																	

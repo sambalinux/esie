@@ -19,7 +19,7 @@ class SiteController extends Controller
     /**
      * {@inheritdoc}
      */
-    public $freeAccessActions = ['index', 'login','about','contact','team']; //Acciones Permitidas
+    public $freeAccessActions = ['index', 'login','about','contact','team','features']; //Acciones Permitidas
 
     public function behaviors()
     {
@@ -146,5 +146,14 @@ class SiteController extends Controller
     public function actionTeam()
     {
         return $this->render('team');
+    }
+        /**
+     * Displays team page.
+     *
+     * @return string
+     */
+    public function actionFeatures()
+    {
+        return $this->render('features');
     }
 }

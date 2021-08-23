@@ -1,10 +1,20 @@
+<?php 
+use yii\helpers\Html;
+?>
 <div class="container py-1 my-1">
 						<div class="row align-items-center text-center my-5">
 							<div class="col-md-6">
 								<h2 class="font-weight-bold text-9 mb-0 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200" data-appear-animation-duration="750" style="animation-delay: 200ms;">Sistema de Integración Escolar</h2>
 								<p class="font-weight-semibold text-primary text-4 fonts-weight-semibold positive-ls-2 mb-3 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600" data-appear-animation-duration="750" style="animation-delay: 600ms;">ADMINISTRACIÓN ESCOLAR CON 30 AÑOS DE EXPERIENCIA</p>
 								<p class="pb-2 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800" data-appear-animation-duration="750" style="animation-delay: 800ms;">Administra y brinda la información escolar efectiva y eficazmente. </p>
-								<a href="#" class="btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000" data-appear-animation-duration="750" target="_blank" style="animation-delay: 1000ms;">CARACTERISTICAS</a>
+								<?= Html::a('Caracteristicas', ['/site/features'], [
+									'class' => 'btn btn-modern btn-gradient btn-rounded btn-px-5 py-3 text-3 mb-4 appear-animation animated fadeInUpShorter appear-animation-visible',
+									'data-appear-animation'=> "fadeInUpShorter",
+									'data-appear-animation-delay'=>"1000",
+									'data-appear-animation-duration'=>"750",
+									 'target'=>"_blank",
+									 'style'=>"animation-delay: 1000ms;"
+									]) ?>
 								<p class="appear-animation text-3 animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200" style="animation-delay: 1200ms;">* Solicita una  <strong class="text-dark">demostración</strong> Muchas instituciones lo garantizan.</p>
 							</div>
 							<div class="col-md-6 position-relative py-5">
@@ -21,32 +31,86 @@
 						</div>
 					</div>
 	
-					<section class="section border-0 mt-0 mb-4">
+					<section class="section section-height-3 bg-color-grey-scale-1 section-no-border m-0">
 					<div class="container">
-						<div class="row">
-							<div class="col pt-2 text-center text-lg-start text-center">
-								<h3 class="text-3 text-dark m-0 font-weight-bold d-inline-block pe-4 mb-3">SOPORTE:</h3>
-								<div class="d-inline-block">
 
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">CLIENTES</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">PREGUNTAS</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">CONSULTORIA</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">SERVICIOS</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">ACTUALIZACIONES</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">DESCARGAS</a>
-
-									<a href="#" class="btn py-3 px-4 text-1 text-dark btn-light bg-transparent text-uppercase font-weight-bold me-2 mb-2">BUSQUEDA</a>
-
-								</div>
+						<div class="row recent-posts pb-4 mb-5">
+							<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+								<article>
+									<div class="row">
+										<div class="col-auto pe-0">
+											<div class="date">
+												<span class="day text-color-dark font-weight-extra-bold">15</span>
+												<span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+											</div>
+										</div>
+										<div class="col ps-1">
+											<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
+											<p class="line-height-5 pe-3 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta.</p>
+											<a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+								<article>
+									<div class="row">
+										<div class="col-auto pe-0">
+											<div class="date">
+												<span class="day text-color-dark font-weight-extra-bold">14</span>
+												<span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+											</div>
+										</div>
+										<div class="col ps-1">
+											<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
+											<p class="line-height-5 pe-3 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta.</p>
+											<a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-6 col-lg-3 mb-4 mb-md-0">
+								<article>
+									<div class="row">
+										<div class="col-auto pe-0">
+											<div class="date">
+												<span class="day text-color-dark font-weight-extra-bold">13</span>
+												<span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+											</div>
+										</div>
+										<div class="col ps-1">
+											<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
+											<p class="line-height-5 pe-3 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta.</p>
+											<a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+										</div>
+									</div>
+								</article>
+							</div>
+							<div class="col-md-6 col-lg-3">
+								<article>
+									<div class="row">
+										<div class="col-auto pe-0">
+											<div class="date">
+												<span class="day text-color-dark font-weight-extra-bold">12</span>
+												<span class="month bg-color-light font-weight-semibold text-color-primary text-1">JAN</span>
+											</div>
+										</div>
+										<div class="col ps-1">
+											<h4 class="line-height-3 text-4"><a href="blog-post.html" class="text-dark">Lorem ipsum dolor sit amet, consectetur</a></h4>
+											<p class="line-height-5 pe-3 mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta.</p>
+											<a href="/" class="read-more text-color-dark font-weight-bold text-2">read more <i class="fas fa-chevron-right text-1 ms-1"></i></a>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="row mb-5">
+							<div class="col-lg-12 text-center">
+								<a href="#" class="btn btn-dark btn-px-5 btn-py-2 font-weight-bold text-color-light rounded-0 text-2">VIEW BLOG</a>
 							</div>
 						</div>
 					</div>
-				</section>	
+				</section>
 					
 <!--Video -->
 <!--<div class="container pt-2 pb-4">
