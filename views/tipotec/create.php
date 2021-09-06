@@ -6,6 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Tipotec */
 
 $this->title = 'Create Tipotec';
+$this->params['breadcrumbs'][] = ['label' => 'panel', 'url' => ['/site/dashboard']];
 $this->params['breadcrumbs'][] = ['label' => 'Tipotecs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

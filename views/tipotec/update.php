@@ -6,6 +6,7 @@ use yii\helpers\Html;
 /* @var $model app\models\Tipotec */
 
 $this->title = 'Update Tipotec: ' . $model->IDTipoTec;
+$this->params['breadcrumbs'][] = ['label' => 'panel', 'url' => ['/site/dashboard']];
 $this->params['breadcrumbs'][] = ['label' => 'Tipotecs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->IDTipoTec, 'url' => ['view', 'id' => $model->IDTipoTec]];
 $this->params['breadcrumbs'][] = 'Update';

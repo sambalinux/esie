@@ -9,19 +9,23 @@ use yii\helpers\Html;
 
 $this->title = $name;
 ?>
+<div class="container">
+   <div class="row py">
 <div class="site-error">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    
 
     <div class="alert alert-danger">
         <?= nl2br(Html::encode($message)) ?>
     </div>
+    <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        The above error occurred while the Web server was processing your request.
+       El error ocurrió mientras el servidor web procesaba su solicitud.
     </p>
     <p>
-        Please contact us if you think this is a server error. Thank you.
+        Por favor contactenos, si piensas que es un error del servidor. Gracias.
     </p>
 
 </div>
+</div></div>

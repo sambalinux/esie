@@ -92,7 +92,7 @@ class Cliente extends \yii\db\ActiveRecord
     {
         return [
             'IDCliente' => 'Id Cliente',
-            'CveCentroTra' => 'Clave del centro de trabajo',
+            'CveCentroTra' => 'Cve Centro Trabajo',
             'FKTipoTec' => 'Tipo de Instituto',
             'nombre' => 'Nombre',
             'ncorto' => 'Nombre corto',

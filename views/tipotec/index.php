@@ -8,6 +8,7 @@ use yii\grid\GridView;
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Tipotecs';
+$this->params['breadcrumbs'][] = ['label' => 'panel', 'url' => ['/site/dashboard']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="container">

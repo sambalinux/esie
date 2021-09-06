@@ -158,12 +158,8 @@ use webvimark\modules\UserManagement\models\User;
 																		<?= Html::a('Cerrar sesión (' . Yii::$app->user->identity->username . ')', ['/user-management/auth/logout'], ['class' => 'dropdown-item dropdown-toggle']) ?>
 																		<?php if(User::hasRole('superadmin')): ?>
 																		<ul class="dropdown-menu">
-																			<li>
-																			<?= Html::a('Usuarios', ['/user-management/user/index'], ['class' => 'dropdown-item']) ?>
-																			</li>
-																			<li><?= Html::a('Roles', ['/user-management/role/index'], ['class' => 'dropdown-item']) ?></li>
-																			<li><?= Html::a('Permisos', ['/user-management/permission/index'], ['class' => 'dropdown-item']) ?></li>
-																			<li><?= Html::a('Clientes', ['/cliente/index'], ['class' => 'dropdown-item']) ?></li>
+																				<li><?= Html::a('Mi Cuenta', ['/cliente/index'], ['class' => 'dropdown-item']) ?></li>
+																			<li><?= Html::a('Panel Control', ['/site/dashboard'], ['class' => 'dropdown-item']) ?></li>
 																		</ul>
 																		<?php endif;?>
 																	

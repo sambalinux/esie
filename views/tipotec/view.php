@@ -7,6 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model app\models\Tipotec */
 
 $this->title = $model->IDTipoTec;
+$this->params['breadcrumbs'][] = ['label' => 'panel', 'url' => ['/site/dashboard']];
 $this->params['breadcrumbs'][] = ['label' => 'Tipotecs', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

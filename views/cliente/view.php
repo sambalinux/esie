@@ -7,6 +7,7 @@ use app\components\Util;
 /* @var $model app\models\Cliente */
 
 $this->title = $model->IDCliente;
+$this->params['breadcrumbs'][] = ['label' => 'panel', 'url' => ['/site/dashboard']];
 $this->params['breadcrumbs'][] = ['label' => 'Clientes', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);

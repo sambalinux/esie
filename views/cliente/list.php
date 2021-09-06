@@ -24,7 +24,6 @@ $this->params['breadcrumbs'][] = "Clientes";
         </div>
     </div>
 </section>
-<?php $dataProvider = array(1, 2, 3, 4, 5, 6, 7, 8);?>
 <section class="section section-custom-map appear-animation lazyloaded animated fadeInUpShorter appear-animation-visible" data-appear-animation="fadeInUpShorter" data-src-bg="<?= Yii::getAlias('@web') ?>/img/map.png" style="background-color: transparent; background-position: center 0px; background-repeat: no-repeat; animation-delay: 100ms;">
     <section class="section section-default section-footer">
         <div class="container">
